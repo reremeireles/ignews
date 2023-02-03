@@ -70,6 +70,3 @@ Acesse o deploy do projeto: https://ignews-reremeireles.vercel.app/
 - Configuração e consumo da API do Prismic através de integração com o NextJS
 - Testes unitários em componentes e páginas utilizando o Jest
   - utilização de mocks para simular funcionalidades e rotas nos testes
-
-
-Aplicação WEB de um blog utilizando NextJS, Typescript, Stripe, Prismic e FaubaDB.
