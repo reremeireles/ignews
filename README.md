@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📰 Ignews
 
-## Getting Started
+## 💡 Projeto
 
-First, run the development server:
+Desenvolvimento de uma aplicação WEB utilizando NextJS. O Ignews é um aplicação do tipo blog, onde o Font-end se torna mais responsável pelas funcionalidades da aplicação.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### A aplicação contém as funcionalidades de:
+- autenticação do usuário via GitHub,
+- acesso a uma prévia dos conteúdos do blog,
+- inscrição e assinatura mensal para consumir o conteúdo completo do blog.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Possíveis ações que o usuário pode tomar: 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+  - acessar a página Home e realizar login usando a autenticação do GitHub. A página Home exibe o status do usuário quando ele está logado na aplicação, entretanto, estar logado não significa estar inscrito no serviço. O usuário pode acessar a página Posts e ter acesso apenas a uma prévia do conteúdo das postagens, sendo necessário partir para a próxima ação de se inscrever no serviço;
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+  - estando logado, o usuário pode clicar no botão Subscribe para se inscrever no serviço, neste caso o usuário será redirecionado para a área de pagamentos do Stripe;
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+ - por fim, estando logado e com uma inscrição ativa no serviço, o usuário poderá ter acesso a todos os conteúdos oferecidos pelo blog.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse o deploy do projeto: https://ignews-reremeireles.vercel.app/
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 💻 Tecnologias e Bibliotecas
 
-## Deploy on Vercel
+- ReactJS
+- NextJS
+- Typescript
+- SASS
+- Axios
+- Stripe
+  - controle de pagamentos
+- GitHub OAuth
+  - autenticação para logar com o GitHub 
+- FaunaDB
+  - banco de dados
+- Prismic
+  - CMS (Content Management System)
+- Jest
+  - testes unitários
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 👩‍💻 Conceitos aplicados no projeto
+
+- Front-end JAMStack
+- Método Scoped CSS
+  - utilizado para que a estilização de um componente nunca afete a estilização dos outros componentes. O Scoped CSS é nativo do NextJS, portanto, para usá-lo basta alterar a extensão `.css` para `.module.css`
+- Estilização utilizando Classes
+  - não é possível fazer estilização direto nos elementos HTML, é preciso usar classes para estilizar os elementos
+- Estrutura base de arquivos no NextJS
+  - `_app.tsx`
+    - o arquivo `_app.tsx` está para o NextJS assim como o componente App está para o Create React App, ambos são arquivos que ficam por volta de todos os outros componentes da aplicação. Quando algum conteúdo ou elemento da aplicação precisa aparecer em todas as páginas da aplicação, é preciso inseri-lo dentro do arquivo `_app.tsx`
+    
+  - `_document.tsx`
+    - o arquivo `_documents.tsx` funciona de forma semelhante ao arquivo `_app.tsx`, exceto pelo fato de que tudo que se encontra dentro do arquivo `_documents.tsx` carrega apenas uma vez dentro da aplicação
+- Title dinâmico utilizando componente `<Head/>` importado do NextJS
+- Configuração de estilos globais
+  - os estilos globais são compartilhados em todas as páginas da aplicação
+- Componentização
+- Hooks
+  - useRouter
+  - useSession
+  - useEffect
+- Autenticação via GitHub utilizando o GitHub Provider do NextAuth
+- Integração com a API do Stripe
+- Conceitos de SSR (Server Side Rendering) e SSG (Static Site Generation)
+- Data Fetching
+- Webhooks do Stripe
+  - monitorar e salvar dados dos eventos
+- Configuração e consumo da API do Prismic através de integração com o NextJS
+- Testes unitários em componentes e páginas utilizando o Jest
+  - utilização de mocks para simular funcionalidades e rotas nos testes
+
+
+Aplicação WEB de um blog utilizando NextJS, Typescript, Stripe, Prismic e FaubaDB.
