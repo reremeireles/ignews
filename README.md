@@ -18,7 +18,7 @@ Desenvolvimento de uma aplicação WEB utilizando NextJS. O Ignews é um aplica�
 
 - por fim, estando logado e com uma inscrição ativa no serviço, o usuário poderá ter acesso a todos os conteúdos oferecidos pelo blog.
 
-Acesse o deploy do projeto:
+Acesse o deploy do projeto: ignews-reremeireles.vercel.app/
 
 ## 💻 Tecnologias e Bibliotecas
 
