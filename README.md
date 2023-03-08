@@ -2,7 +2,7 @@
 
 ## 💡 Projeto
 
-Desenvolvimento de uma aplicação WEB utilizando NextJS. O Ignews é um aplicação do tipo blog, onde o Font-end se torna mais responsável pelas funcionalidades da aplicação.
+Desenvolvimento de uma aplicação WEB utilizando NextJS. O Ignews é um aplicação do tipo blog, onde o Front-end se torna mais responsável pelas funcionalidades da aplicação.
 
 #### A aplicação contém as funcionalidades de:
 
@@ -18,7 +18,7 @@ Desenvolvimento de uma aplicação WEB utilizando NextJS. O Ignews é um aplica�
 
 - por fim, estando logado e com uma inscrição ativa no serviço, o usuário poderá ter acesso a todos os conteúdos oferecidos pelo blog.
 
-Acesse o deploy do projeto:
+Acesse o deploy do projeto: https://ignews-reremeireles.vercel.app/
 
 ## 💻 Tecnologias e Bibliotecas
 
